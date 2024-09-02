@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){var t=e("#portfolio_list");t.sortable({update:function(n,r){opts={url:ajaxurl,type:"POST",async:true,cache:false,dataType:"json",data:{action:"portfolio_sort",order:t.sortable("toArray").toString()},success:function(e){return},error:function(e,t,n){alert("There was an error saving the update.");return}};e.ajax(opts)}})})

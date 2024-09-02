@@ -1,0 +1,61 @@
+/*--------------------------------------
+   Footer
+--------------------------------------*/
+
+// Notes...
+
+#footer {
+
+	border-top: 1px solid darken($red, 5%);
+	box-shadow: 0 1px 0 rgba($white, 0.11) inset;
+	background: $red;
+
+	.wrap {
+
+		padding: 20px 0;
+
+		@media screen and (min-width: 700px) {
+
+			@include group;
+
+		}
+
+	}
+
+}
+
+		.copyright {
+
+			margin: 0;
+			@include font-size(14);
+			line-height: 1.857142857; // 26px, 26/14
+			color: lighten($red, 50%);
+
+			@media screen and (min-width: 700px) {
+
+				float: left;
+
+			}
+
+		}
+
+		.created-by {
+
+			color: lighten($red, 50%);
+			@include font-size(14);
+			line-height: 1.857142857; // 26px, 26/14
+
+			@media screen and (min-width: 700px) {
+
+				float: right;
+
+			}
+
+			a {
+
+				color: lighten($red, 50%);
+				&:hover {}
+
+			}
+
+		}

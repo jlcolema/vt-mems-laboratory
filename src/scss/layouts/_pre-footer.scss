@@ -1,0 +1,256 @@
+/*--------------------------------------
+   Pre-Footer
+--------------------------------------*/
+
+// Notes...
+
+#pre-footer {
+
+	background: $red;
+
+	.wrap {
+
+		padding: 45px 0 40px 0;
+
+	}
+
+}
+
+		.pre-footer-widgets {
+
+			@media screen and (min-width: 500px) {
+
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: flex-start;
+				align-content: flex-start;
+
+			}
+
+			@media screen and (min-width: 800px) {
+
+				flex-wrap: nowrap;
+
+			}
+
+			.widget {
+
+				margin: 0 0 40px 0;
+
+				@media screen and (min-width: 500px) {
+
+					width: 46%;
+					width: calc(50% - 20px);
+
+				}
+
+				@media screen and (min-width: 800px) {
+
+					width: 21%;
+					width: calc(25% - 30px);
+
+				}
+
+				@media screen and (min-width: 1000px) {
+
+					width: 20%;
+					width: calc(25% - 54px);
+
+				}
+
+				&:nth-child(1) {
+
+					margin: 0 0 40px 0;
+
+					@media screen and (min-width: 800px) {
+
+						margin: 0;
+
+					}
+
+				}
+
+				&:nth-child(2) {
+
+					margin: 0 0 40px 0;
+
+					@media screen and (min-width: 800px) {
+
+						margin: 0;
+
+					}
+
+				}
+
+				&:nth-child(3) {
+
+					margin: 0 0 40px 0;
+
+					@media screen and (min-width: 500px) {
+
+						margin: 0;
+
+					}
+
+				}
+
+				&:nth-child(4) {
+
+					margin: 0;
+
+				}
+
+			}
+
+				.widget-title {
+
+					margin: 0 0 0.785714286em 0; // 11px, 11/14
+					@include font-size(14);
+					line-height: 1.857142857; // 26px, 26/14
+					text-transform: uppercase;
+					color: lighten($red, 50%);
+
+					a {
+
+						color: lighten($red, 50%);
+
+						&:hover {}
+
+					}
+
+				}
+
+				.widget-content {}
+
+		}
+
+			.widget-publications {
+
+				.widget-title {}
+
+				.widget-content {}
+
+					article {
+
+						margin: 0.555555556em 0 0.888888889em 0; // 10px 0 16px 0, divided by 18
+
+					}
+
+						h1 {
+
+							margin: 0;
+							@include font-size(16);
+							line-height: 1.375; // 22px, 22/16
+							font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+							font-weight: normal;
+
+						}
+
+							a {
+
+								color: $white;
+
+								&:hover {}
+
+							}
+
+			}
+
+			.widget-news {
+
+				.widget-title {}
+
+				.widget-content {}
+
+					article {
+
+						margin: 0.555555556em 0 0.888888889em 0; // 10px 0 16px 0, divided by 18
+
+					}
+
+						h1 {
+
+							margin: 0;
+							@include font-size(16);
+							line-height: 1.375; // 22px, 22/16
+							font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+							font-weight: normal;
+							color: $white;
+
+						}
+
+							a {
+
+								color: $white;
+
+								&:hover {}
+
+							}
+
+			}
+
+			.widget-navigation {
+
+				.widget-title {}
+
+				.widget-content {}
+
+					ul {
+
+						margin: 0;
+						padding: 0;
+						list-style: none;
+
+					}
+
+						li {
+
+							margin: 0.625em 0; // 10px 0, divided by 16
+							@include font-size(16);
+							line-height: 1.375; // 22px, 22/16
+
+						}
+
+							a {
+
+								color: $white;
+
+								&:hover {}
+
+							}
+
+			}
+
+			.widget-connect {
+
+				.widget-title {}
+
+				.widget-content {}
+
+					ul {
+
+						margin: 0;
+						padding: 0;
+						list-style: none;
+
+					}
+
+						li {
+
+							margin: 0.625em 0; // 10px 0, divided by 16
+							@include font-size(16);
+							line-height: 1.375; // 22px, 22/16
+
+						}
+
+							a {
+
+								color: $white;
+
+								&:hover {}
+
+							}
+
+			}

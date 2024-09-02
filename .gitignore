@@ -1,0 +1,32 @@
+.DS_Store
+node_modules/
+*.sql
+src/backup
+src/ssl
+wp-config*
+
+# Ignore everything in the root except the `wp-content` directory.
+
+dist/html/*
+!dist/html/wp-content/
+
+# Ignore everything in the `wp-content` directory, except the `themes` and `uploads` directories.
+
+dist/html/wp-content/*
+
+!dist/html/wp-content/themes/
+
+# Ignore everything in the `themes` directory, except for the following:
+
+dist/html/wp-content/themes/*
+!dist/html/wp-content/themes/enfold/
+!dist/html/wp-content/themes/enfold-child/
+!dist/html/wp-content/themes/vtml/
+!dist/html/wp-content/themes/xavier/
+!dist/html/wp-content/themes/xavier-child-theme-01/
+
+# Miscellaneous
+
+*.nova
+*.code-workspace
+package-lock.json

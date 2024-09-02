@@ -1,0 +1,244 @@
+/*--------------------------------------
+   Header
+--------------------------------------*/
+
+// Notes...
+
+#header {
+
+	background: $white;
+	border-bottom: 1px solid lighten($gray, 50%);
+
+	.wrap {
+
+		position: relative;
+		padding: 140px 0 0 0;
+
+		@media screen and (min-width: 900px) {
+
+			padding: 160px 0 0 0;
+
+		}
+
+	}
+
+}
+
+		.logo {
+
+			position: absolute;
+			left: -14px;
+			top: 48px;
+			z-index: 1;
+
+			a {
+
+				display: block;
+				width: 270px;
+				height: 64px;
+
+				&:hover {}
+
+			}
+
+				svg {}
+
+		}
+
+		.primary-navigation {
+
+			.toggle {
+
+				margin: 0 0 20px 0;
+				@include font-size(16);
+				line-height: 1.875; // 30px, 30/16
+				font-family: "Archivo Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-align: right;
+
+				@media screen and (min-width: 400px) {
+
+					position: absolute;
+					top: 71px;
+					right: 0;
+					margin: 0;
+					text-align: center;
+					z-index: 1;
+
+				}
+
+				@media screen and (min-width: 900px) {
+
+					display: none;
+
+				}
+
+				span {
+
+					display: block;
+					height: 36px;
+					padding: 3px 14px 0 14px;
+					color: $white;
+					background: $orange;
+					cursor: pointer;
+
+				}
+
+			}
+
+			ul {
+
+				display: none;
+				position: relative;
+				margin: 0 0 20px 0;
+				padding: 10px 0;
+				list-style: none;
+				@include group;
+				border: 1px solid lighten($gray, 50%);
+				border-top: 4px solid $orange;
+
+				@media screen and (min-width: 600px) {
+
+					margin: 0 0 40px 0;
+
+				}
+
+				@media screen and (min-width: 900px) {
+
+					display: block;
+					position: absolute;
+					right: -14px;
+					bottom: 39px;
+					margin: 0;
+					padding: 0;
+					border: none;
+					z-index: 1;
+
+				}
+
+				&:before {
+
+					content: "";
+					position: absolute;
+					right: 22px;
+					top: -16px;
+					width: 0;
+					height: 0;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-bottom: 12px solid $orange;
+					z-index: 1;
+
+					@media screen and (min-width: 900px) {
+
+						content: none;
+
+					}
+
+				}
+
+				// While toggling is active
+
+				&.open {
+
+					display: block;
+
+				}
+
+			}
+
+				li {
+
+					@include font-size(16);
+					line-height: 1.875; // 30px, 30/16
+					font-family: "Archivo Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-weight: bold;
+					text-transform: uppercase;
+
+					@media screen and (min-width: 900px) {
+
+						float: left;
+						margin: 0 8px 0 0;
+
+					}
+
+					&:last-of-type {
+
+						@media screen and (min-width: 900px) {
+
+							margin: 0;
+
+						}
+
+					}
+
+				}
+
+					a {
+
+						display: block;
+						padding: 5px 20px;
+						text-decoration: none;
+
+						@media screen and (min-width: 900px) {
+
+							height: 40px;
+							padding: 5px 14px 0 14px;
+
+						}
+
+						&:hover {
+
+							// color: lighten($gray, 35%);
+
+						}
+
+					}
+
+				.current-menu-item,
+				// For People [Local, Staging]
+				.tax-member_category & #menu-item-908,
+				.tax-member_category & #menu-item-912,
+				// For Individual People [Local, Staging]
+				.single-members & #menu-item-908,
+				.single-members & #menu-item-912,
+				// For Individual Research [Local, Staging]
+				.single-research_project & #menu-item-904,
+				.single-research_project & #menu-item-913 {
+
+					a {
+
+						position: relative;
+						text-decoration: underline;
+
+						@media screen and (min-width: 900px) {
+
+							text-decoration: none;
+
+						}
+
+						&:after {
+
+							@media screen and (min-width: 900px) {
+
+								content: "";
+								position: absolute;
+								left: 14px;
+								bottom: 0;
+								right: 14px;
+								height: 2px;
+								background: $orange;
+								z-index: 1;
+
+							}
+
+						}
+
+						&:hover {}
+
+					}
+
+				}
+
+		}

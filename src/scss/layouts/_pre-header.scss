@@ -1,0 +1,67 @@
+/*--------------------------------------
+   Pre-Header
+--------------------------------------*/
+
+// Notes...
+
+#pre-header {
+
+	.wrap {
+
+		position: relative;
+
+	}
+
+}
+
+		.utility-navigation {
+
+			position: absolute;
+			right: 0;
+			top: 14px;
+			z-index: 1;
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				@include group;
+
+			}
+
+				li {
+
+					float: left;
+					margin: 0 32px 0 0;
+					@include font-size(16);
+					line-height: 1.875; // 30px, 30/16
+					font-family: "Archivo Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+					a {
+
+						color: lighten($gray, 35%);
+
+						&:hover {}
+
+					}
+
+				.current-menu-item {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+		}

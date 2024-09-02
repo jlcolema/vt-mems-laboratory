@@ -1,0 +1,32 @@
+{
+  "name": "vtml",
+  "version": "1.0.0",
+  "description": "WordPress-based website for VT MEMS Laboratory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlcolema/agah-lab.org.git"
+  },
+  "keywords": [
+    "wordpress",
+    "gulp"
+  ],
+  "author": "Joshua Coleman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlcolema/agah-lab.org/issues"
+  },
+  "homepage": "https://github.com/jlcolema/agah-lab.org#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}
